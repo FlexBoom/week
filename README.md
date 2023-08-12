@@ -1,5 +1,7 @@
 # Week
 
+[![build](https://github.com/FlexBoom/week/actions/workflows/rust.yml/badge.svg)](https://github.com/FlexBoom/week/actions/workflows/rust.yml)
+
 The main purpose of `week` is to output the current week number.
 
 You can also output the start and end dates of the week. It is possible to get week number, start and end dates as JSON.
