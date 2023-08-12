@@ -1,6 +1,6 @@
 # Week
 
-[![build](https://github.com/FlexBoom/week/actions/workflows/rust.yml/badge.svg)](https://github.com/FlexBoom/week/actions/workflows/rust.yml?event=push)
+[![build](https://github.com/FlexBoom/week/actions/workflows/rust.yml/badge.svg?event=push)](https://github.com/FlexBoom/week/actions/workflows/rust.yml)
 
 The main purpose of `week` is to output the current week number.
 
