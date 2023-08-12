@@ -1,0 +1,13 @@
+[package]
+name = "week"
+description = "Show week number dy default with options for further information about the week."
+authors = ["FlexBoom"]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+chrono = { version = "0.4.26", features = ["serde"] }
+clap = { version = "4.3.19", features = ["derive"] }
+serde = { version = "1.0.180", features = ["derive"] }
+serde_json = "1.0.104"
