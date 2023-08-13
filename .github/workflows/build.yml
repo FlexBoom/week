@@ -16,6 +16,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Formatting
+      run: cargo fmt --verbose
+    - name: Suggestions
+      run: cargo clippy --verbose
     - name: Build
       run: cargo build --verbose
     - name: Run tests
