@@ -24,21 +24,17 @@ jobs:
         include:
           - target: aarch64-unknown-linux-gnu
             os: ubuntu-latest
-            arch: linux-arm
           - target: x86_64-unknown-linux-gnu
             os: ubuntu-latest
-            arch: linux-intel
           - target: aarch64-apple-darwin
             os: macos-latest
-            arch: apple-arm
           - target: x86_64-apple-darwin
             os: macos-latest
-            arch: apple-intel
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
       - uses: taiki-e/upload-rust-binary-action@v1
         with:
           bin: week
-          target: ${{ matrix.arch }}
+          target: ${{ matrix.target }}
           token: ${{ secrets.GITHUB_TOKEN }}
